@@ -1,0 +1,11 @@
+*.log
+*.pot
+*.pyc
+__pycache__
+db.sqlite3
+media
+
+detection/yolov5/yolov5s.pt
+detection/yolov5/yolov5x6.pt
+detection/mask_rcnn_coco.h5
+
