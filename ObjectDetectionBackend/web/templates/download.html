@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Download</title>
+</head>
+<body>
+    Download Processed Video
+    {% if url %}
+    <a href="{{url}}" download>Download</a>
+    {% else %}
+    <form action="" method="post">
+        {% csrf_token %}
+        <input name="id" value="{{id}}" hidden>
+        <button type="submit">Get Video Url</button>
+    </form>
+    {% endif %}
+</body>
+</html>
